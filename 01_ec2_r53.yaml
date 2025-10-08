@@ -3,9 +3,11 @@
   connection: local
   vars:
     ami_id: ami-09c813fb71547fc4f
-    sg_id: sg-07c8acf3fa6b923fa # replace with your SG ID
-    zone_id: "Z0948150OFPSYTNVYZOY" # replace with your ID
-    domain_name: "daws86s.fun"
+    sg_id: sg-0479eec58ebb8082e # replace with your SG ID
+    zone_id: "Z0411460DWA5V8S79J5W" # replace with your ID
+    domain_name: "yramya.fun"
+    instance: 
+      mongodb
     # we can pass instances through command line using -e
     # instances: 
     # - mongodb
@@ -24,9 +26,9 @@
     loop: "{{ instances }}"
     register: ec2_output
 
-  # - name: print the ec2_output
-  #   ansible.builtin.debug:
-  #     msg: "{{ ec2_output }}"
+  - name: print the ec2_output
+    ansible.builtin.debug:
+      msg: "{{ ec2_output }}"
 
   # - name: print public_ip
   #   ansible.builtin.debug: 
