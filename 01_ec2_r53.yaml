@@ -10,6 +10,7 @@
       - mongodb
       - redis
       - mysql
+      - rabbitmq
     # we can pass instances through command line using -e
   tasks:
   - name: create ec2 instance
