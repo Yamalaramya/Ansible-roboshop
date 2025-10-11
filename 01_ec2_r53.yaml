@@ -8,12 +8,9 @@
     domain_name: "yramya.fun"
     instances: 
       - mongodb
-    # we can pass instances through command line using -e
-    # instances: 
-     # - mongodb
       - redis
       - mysql
-    # rabbitmq
+    # we can pass instances through command line using -e
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
