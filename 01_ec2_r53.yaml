@@ -7,10 +7,6 @@
     zone_id: "Z0411460DWA5V8S79J5W" # replace with your ID
     domain_name: "yramya.fun"
     instances: 
-     # - mongodb
-      #- redis
-      #- mysql
-      #- rabbitmq
       - cart
       - catalogue
       - user
