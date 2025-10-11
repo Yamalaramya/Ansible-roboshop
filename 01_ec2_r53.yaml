@@ -11,6 +11,11 @@
       - redis
       - mysql
       - rabbitmq
+      - cart
+      - catalogue
+      - user
+      - shipping
+      - payment
     # we can pass instances through command line using -e
   tasks:
   - name: create ec2 instance
